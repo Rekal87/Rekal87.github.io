@@ -1,9 +1,4 @@
-body {
-  color: #f9f9f9;
-}
-
 #about {
-  background-color: #14121c;
   height: auto;
   overflow: hidden;
   position: relative;
@@ -19,7 +14,7 @@ body {
   content: attr(data-line-nr);
   font-family: Roboto Mono, Courier New, Courier, monospace !important;
   font-size: 16px;
-  left: -25px;
+  left: -38px;
   line-height: 1.6;
   position: absolute;
   top: 0;
@@ -40,11 +35,13 @@ body {
 .section-title.alt {
   display: inline-block;
   margin-top: 30px;
+  padding-left: 65px;
 }
 
 .timeline {
   background-color: #5918df;
   position: absolute;
+  left: 90px;
   width: 1px;
   z-index: 9;
 }
@@ -59,12 +56,17 @@ body {
   display: inline;
 }
 
+.number {
+  color: #e39d24;
+}
+
 .propname {
   color: #eeff31;
 }
 
 .dot {
   color: #3b3553;
+  display: inline;
 }
 
 .scope {
@@ -79,6 +81,20 @@ body {
   color: #24e33a;
 }
 
+.comment {
+  color: #78707e;
+  display: inline;
+}
+
 .space {
   width: 500px;
+}
+
+.cursor:before {
+  animation-name: blink;
+  animation-duration: 800ms;
+  animation-iteration-count: infinite;
+  content: "|";
+  opacity: 0;
+  color: white;
 }
